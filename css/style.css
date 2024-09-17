@@ -970,3 +970,70 @@ img {
 /* =====================================================================================
   ================================  END OF CONTACT ======================================
   =======================================================================================  */
+
+/* =====================================================================================
+================================  STYLE FOR FOOTER  ==============================
+=======================================================================================  */
+.footer {
+    padding-top: 2rem;
+}
+
+.footer-container {
+    row-gap: 3rem;
+}
+
+.footer-bg {
+    background-color: var(--first-color-second);
+    padding: 2rem 0 3rem;
+}
+
+.footer-title {
+    font-size: var(--h1--font-size);
+    margin-bottom: var(--mb-0-75);
+}
+
+.footer-subtitle {
+    font-size: var(--small-font-size);
+}
+
+.footer-links {
+    display: flex;
+    column-gap: 3rem;
+    margin-left: 4rem;
+}
+
+.footer-link:hover {
+    color: var(--first-color-lighter);
+}
+
+.footer-socials-icon {
+    font-size: 1.5rem;
+    margin-right: var(--mb-1-5);
+}
+
+.footer-socials-icon:hover {
+    color: var(--first-color-lighter);
+}
+
+.footer-container {
+    grid-template-columns: 1fr 2fr 1fr;
+    text-align: center;
+}
+
+.footer-copy {
+    text-align: center;
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+    margin-top: var(--mb-3);
+}
+
+.footer-title,
+.footer-subtitle,
+.footer-link,
+.footer-socials-icon {
+    color: #fff;
+}
+
+/* =====================================================================================
+  ================================  END OF FOOTER ======================================
+  =======================================================================================  */
