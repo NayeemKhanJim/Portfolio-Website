@@ -181,3 +181,138 @@ img {
 /* =====================================================================================
 ================================  END OF HEADER  ======================================
 =======================================================================================  */
+
+/* =====================================================================================
+================================  STYLE FOR HOME  ======================================
+=======================================================================================  */
+
+.home-content {
+    grid-template-columns: max-content 1fr 1fr;
+    padding-top: 3rem;
+    align-items: center;
+}
+
+.home-social {
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+}
+
+.home-social-icon {
+    font-size: 1.25rem;
+    color: var(--first-color);
+}
+
+.home-social-icon:hover {
+    color: var(--first-color-alt);
+}
+
+.home-blob {
+    width: 320px;
+    fill: var(--first-color);
+}
+
+.home-blob-image {
+    width: 250px;
+}
+
+.home-img {
+    justify-self: center;
+}
+
+.home-title {
+    font-size: var(--big-font-size);
+}
+
+.home-subtitle {
+    font-size: var(--h3--font--size);
+    color: var(--text-color);
+    font-weight: var(--font--medium);
+    margin-bottom: var(--mb-0-75);
+}
+
+.home-description {
+    margin-bottom: var(--mb-3);
+}
+
+.home-scroll-button {
+    color: var(--first-color);
+    transition: 0.3s;
+}
+
+.home-scroll-button:hover {
+    transform: translateY(1rem);
+}
+
+.home-scroll-mouse {
+    font-size: 2rem;
+}
+
+.home-scroll-name {
+    font-size: var(--h3--font--size);
+    color: var(--title-color);
+    margin-right: var(--mb-0-25);
+    font-weight: var(--font--medium);
+}
+
+.home-scroll-arrow {
+    font-size: 1.25rem;
+}
+
+/* ======================    BUTTON    =============================== */
+/* ======================    BUTTON    =============================== */
+/* ======================    BUTTON    =============================== */
+/* ======================    BUTTON    =============================== */
+/* ======================    BUTTON    =============================== */
+/* ======================    BUTTON    =============================== */
+.button {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight: var(--font--medium);
+}
+
+.button:hover {
+    background-color: var(--first-color-alt);
+}
+
+.button-icon {
+    font-size: 1.25rem;
+    margin-left: var(--mb-0-5);
+    transition: 0.3s;
+}
+
+.button-white {
+    background-color: #fff;
+    color: var(--first-color);
+}
+
+.button-white:hover {
+    background-color: yellowgreen;
+}
+
+.button-flex {
+    display: inline-flex;
+    align-items: center;
+}
+
+.button-small {
+    padding: 0.75rem 1rem;
+}
+
+.button-link {
+    padding: 0;
+    background-color: transparent;
+    color: var(--first-color);
+}
+
+.button-link:hover {
+    background-color: transparent;
+    color: var(--first-color-alt);
+}
+
+/* =====================================================================================
+  ================================  END OF HOME  ======================================
+  =======================================================================================  */
