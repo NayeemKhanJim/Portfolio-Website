@@ -867,3 +867,51 @@ img {
 /* =====================================================================================
   ================================  END OF PROJECTS ======================================
   =======================================================================================  */
+
+/* =====================================================================================
+================================  STYLE FOR TESTIMONIAL  ==============================
+=======================================================================================  */
+.testimonial-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.testimonial-data,
+.testimonial-header {
+    display: flex;
+}
+
+.testimonial-data {
+    justify-content: space-between;
+    margin-bottom: var(--mb-1);
+}
+
+.testimonial-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: var(--mb-0-75);
+}
+
+.testimonial-name {
+    font-size: var(--h3--font--size);
+    font-weight: var(--font--medium);
+}
+
+.testimonial-client {
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.testimonial-description {
+    margin-bottom: var(--mb-2-5);
+}
+
+.testimonial-icon {
+    color: var(--first-color);
+}
+
+/* =====================================================================================
+  ================================  END OF TESTIMONIAL ======================================
+  =======================================================================================  */
