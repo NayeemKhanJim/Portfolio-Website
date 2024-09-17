@@ -1037,3 +1037,249 @@ img {
 /* =====================================================================================
   ================================  END OF FOOTER ======================================
   =======================================================================================  */
+
+/* =====================================================================================
+======================================================================================
+=======================================================================================
+ ================================ MEDIA QUERIES  =====================================
+================================================================================
+=======================================================================================  */
+
+/* ========================== For Medium Devices ===================================== */
+
+@media screen and (max-width: 816px) {
+    :root {
+        --big-font-size: 2rem;
+        --h1--font-size: 1.5rem;
+        --h2--font--size: 1.25rem;
+        --h3--font--size: 1.125rem;
+        --normal-font--size: 0.938rem;
+        --small-font-size: 0.813rem;
+        --smaller-font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 816px) {
+    .show-menu-bar {
+        bottom: 0;
+    }
+
+    .nav-btns {
+        display: inline-block;
+    }
+
+    .main {
+        padding: 0 2rem;
+    }
+
+    .header {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: var(--z-fixed);
+        background-color: var(--body-color);
+        padding: 0 1rem;
+    }
+
+    .nav-menu {
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--body-color);
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: 0.3s;
+    }
+
+    .nav-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-icon {
+        font-size: 1.2rem;
+        display: inline-block;
+    }
+
+    .nav-toggle {
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+
+    .nav-toggle:hover {
+        color: var(--first-color);
+    }
+
+    .nav-close {
+        position: absolute;
+        right: 1.3rem;
+        bottom: 0.5rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--first-color);
+    }
+
+    .nav-close:hover {
+        color: var(--first-color-alt);
+    }
+
+    .nav-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .home-content {
+        grid-template-columns: max-content 2fr 1fr;
+    }
+
+    .home-blob {
+        width: 260px;
+        fill: var(--first-color);
+    }
+
+    .home-blob-image {
+        width: 250px;
+    }
+
+    .skills-container,
+    .about-container,
+    .contact-container,
+    .testimonial-container,
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .services-content {
+        text-align: center;
+        padding-right: 2rem;
+    }
+
+    .portfolio-container {
+        width: 100%;
+    }
+
+    .portfolio-content {
+        grid-template-columns: 1fr;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    .portfolio-img {
+        width: 300px;
+        justify-self: center;
+    }
+
+    .projects-bg {
+        width: auto;
+    }
+
+    .projects-data {
+        margin-left: 2rem;
+    }
+
+    .footer-links {
+        column-gap: 1.5rem;
+        margin: auto;
+    }
+
+    .qualification-data {
+        grid-template-columns: 40% max-content 40%;
+        column-gap: 1rem;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-link {
+        margin-left: 0;
+    }
+}
+
+/* ======================= For Small Devices ============================== */
+
+@media screen and (max-width: 550px) {
+    .main {
+        padding: 0 1rem;
+    }
+
+    .home-content {
+        grid-template-columns: 0.3fr 3fr;
+        grid-column-gap: 0;
+    }
+
+    .home-data {
+        order: 1;
+        grid-column: 1/3;
+    }
+
+    .home-blob {
+        width: 200px;
+        fill: var(--first-color);
+    }
+
+    .home-blob-image {
+        width: 250px;
+    }
+
+    .home-img {
+        justify-self: center;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+/* =============================== For Extra Small Devices ================================== */
+
+@media screen and (max-width: 350px) {
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .services-content {
+        text-align: center;
+        padding-right: 1rem;
+    }
+
+    .portfolio-content {
+        grid-template-columns: 1fr;
+        padding: 1rem 0;
+        text-align: left;
+    }
+
+    .portfolio-img {
+        width: 200px;
+        justify-self: center;
+    }
+
+    .testimonial-data,
+    .testimonial-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-img {
+        margin-right: 1rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}
